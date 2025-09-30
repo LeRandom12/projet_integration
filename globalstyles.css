@@ -13,5 +13,9 @@ thead tr , tbody tr:not(:last-child) { border-bottom: 1px solid #d8d9dc ; }
 
 #__pushctn {  }
 label { 
-    
+    display: inline-block ;
+    background: #e5e7eb ;
+    padding: 3px 7px ;
+    border-radius: 7px ;
+    margin-right: 5px ;
 }
