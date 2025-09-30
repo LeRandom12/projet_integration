@@ -7,7 +7,10 @@ fetch ('posts.json').then ((res) => res.json ()).then ((res) => {
 
         let tr = document.createElement ('tr') ;
         let contact_name = document.createElement ('td') ; contact_name.textContent = el.Name ;
-        tr.append (contact_name) ;
+        let contact_ville = document.createElement ('td') ; contact_ville.textContent = el.city ;
+        let contact_email = document.createElement ('td') ; contact_email.textContent = el.email ;
+        let contact_skills = document.createElement ('td') ; contact_skills.textContent = el.skills ;
+        tr.append (contact_name , contact_ville , contact_email , contact_skills) ;
         
         __pushctn.append (tr) ;
     }) ;
