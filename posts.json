@@ -1,28 +1,24 @@
 {
     "contacts": [ {
-        "firstName": "Alice",
-        "lastName": "Martin",
+        "Name": "Alice Martin",
         "city": "Paris",
         "email": "alice.martin@example.com",
         "skills": ["JavaScript", "React", "Node.js"]
     } ,
     {
-        "firstName": "Karim",
-        "lastName": "Benali",
+        "Name": "Karim Benali",
         "city": "Lyon",
         "email": "karim.benali@example.com",
         "skills": ["Python", "Django", "SQL"]
     } ,
     {
-        "firstName": "Sophie",
-        "lastName": "Durand",
+        "Name": "Sophie Durand",
         "city": "Marseille",
         "email": "sophie.durand@example.com",
         "skills": ["Java", "Spring Boot", "Docker", "Kubernetes"]
     } ,
     {
-        "firstName": "Lucas",
-        "lastName": "Nguyen",
+        "Name": "Lucas Nguyen",
         "city": "Toulouse",
         "email": "lucas.nguyen@example.com",
         "skills": ["C#", ".NET", "Azure"]
