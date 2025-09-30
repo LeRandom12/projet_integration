@@ -3,24 +3,28 @@
         "Name": "Alice Martin",
         "city": "Paris",
         "email": "alice.martin@example.com",
+        "company": "amazon",
         "skills": ["JavaScript", "React", "Node.js"]
     } ,
     {
         "Name": "Karim Benali",
         "city": "Lyon",
         "email": "karim.benali@example.com",
+        "company": "google",
         "skills": ["Python", "Django", "SQL"]
     } ,
     {
         "Name": "Sophie Durand",
         "city": "Marseille",
         "email": "sophie.durand@example.com",
+        "company": "facebook",
         "skills": ["Java", "Spring Boot", "Docker", "Kubernetes"]
     } ,
     {
         "Name": "Lucas Nguyen",
         "city": "Toulouse",
         "email": "lucas.nguyen@example.com",
+        "company": "pinterest",
         "skills": ["C#", ".NET", "Azure"]
     } ]
 }
