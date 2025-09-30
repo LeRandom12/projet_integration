@@ -1,16 +1,30 @@
 {
-    "author": "Jean Dupont",
-    "title": "L'intelligence artificielle : révolution ou menace ?",
-    "description": "Un article qui explore ce qu'est l'IA, ses applications concrètes et les questions éthiques qu'elle soulève.",
-    "date": "2025-09-30",
-    "tags": ["IA", "technologie", "éthique", "futur"],
-    "body": {
-        "introduction": "L'intelligence artificielle (IA) est aujourd'hui au cœur de nombreuses discussions, qu'il s'agisse de ses usages dans la santé, la finance ou encore les transports. Mais au-delà de l'engouement, se pose une question essentielle : jusqu'où doit-on laisser ces systèmes prendre des décisions ?",
-        "sections": [ 
-            { "heading": "Qu'est-ce que l'IA ?" , "content": "L'IA désigne des systèmes capables de simuler certaines fonctions cognitives humaines comme la perception, le raisonnement, l'apprentissage ou la prise de décision. Elle repose sur des algorithmes qui traitent de grandes quantités de données." } ,
-            { "heading": "Applications concrètes", "content": "Aujourd'hui, l'IA est présente dans les assistants vocaux, les voitures autonomes, le diagnostic médical et même la création artistique. Ces usages transforment notre quotidien et nos métiers." } ,
-            { "heading": "Les enjeux éthiques" , "content": "Automatisation du travail, biais algorithmiques, protection des données... L'IA soulève de nombreux défis. La société doit réfléchir aux limites et aux règles nécessaires pour garantir un usage bénéfique." } 
-        ] ,
-        "conclusion": "L'IA n'est ni une solution miracle ni une apocalypse annoncée. C'est un outil puissant qui doit être encadré pour servir l'humanité plutôt que la remplacer."
-    }
+    "contacts": [ {
+        "firstName": "Alice",
+        "lastName": "Martin",
+        "city": "Paris",
+        "email": "alice.martin@example.com",
+        "skills": ["JavaScript", "React", "Node.js"]
+    } ,
+    {
+        "firstName": "Karim",
+        "lastName": "Benali",
+        "city": "Lyon",
+        "email": "karim.benali@example.com",
+        "skills": ["Python", "Django", "SQL"]
+    } ,
+    {
+        "firstName": "Sophie",
+        "lastName": "Durand",
+        "city": "Marseille",
+        "email": "sophie.durand@example.com",
+        "skills": ["Java", "Spring Boot", "Docker", "Kubernetes"]
+    } ,
+    {
+        "firstName": "Lucas",
+        "lastName": "Nguyen",
+        "city": "Toulouse",
+        "email": "lucas.nguyen@example.com",
+        "skills": ["C#", ".NET", "Azure"]
+    } ]
 }
