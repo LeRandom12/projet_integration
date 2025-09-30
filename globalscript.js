@@ -1,7 +1,7 @@
 
 
 let __pushctn = document.getElementById ('__pushctn') ;
-fetch ('posts.json').then ((res) => res.json ()).then ((res) => {
+fetch ('contact.json').then ((res) => res.json ()).then ((res) => {
     res.contacts.forEach((el) => {
         console.log (el) ;
 
@@ -9,9 +9,10 @@ fetch ('posts.json').then ((res) => res.json ()).then ((res) => {
         let contact_name = document.createElement ('td') ; contact_name.textContent = el.Name ;
         let contact_ville = document.createElement ('td') ; contact_ville.textContent = el.city ;
         let contact_email = document.createElement ('td') ; contact_email.textContent = el.email ;
+        let contact_company = document.createElement ('td') ; contact_company.textContent = el.company ;
         let contact_skills = document.createElement ('td') ; contact_skills.textContent = el.skills ;
-        tr.append (contact_name , contact_ville , contact_email , contact_skills) ;
-        
+        tr.append (contact_name , contact_ville , contact_email , contact_company , contact_skills) ;
+
         __pushctn.append (tr) ;
     }) ;
 
