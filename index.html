@@ -1,20 +1,156 @@
 
 <!DOCTYPE html>
-<html lang='fr'>
-    <head>
-            <meta charset='UTF-8' />
-            <meta name='viewport' content='width = device-width , initial-scale = 1.0 , maximum-scale = 1.0 , user-scalable = no'>
-            <title> CI/CD </title>
-            <link href='globalstyles.css' rel='stylesheet' />
-            
-    <body>
-        <div class='root' l=0 fl=0> 
-            <h1> Test </h1>
-            <h3> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores </h3>
-            <div id='__pushctn'>  </div>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#1193d4",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101c22",
+            },
+            fontFamily: {
+              display: ["Inter"],
+            },
+            borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+          },
+        },
+      };
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm shadow-sm">
+<div class="container mx-auto flex items-center justify-between whitespace-nowrap px-4 sm:px-6 lg:px-8 py-3">
+<div class="flex items-center gap-3">
+<svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_319)">
+<path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path>
+</g>
+<defs>
+<clipPath id="clip0_6_319"><rect fill="white" height="48" width="48"></rect></clipPath>
+</defs>
+</svg>
+<h2 class="text-xl font-bold">DevExchange</h2>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">How it works</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Pricing</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Contact us</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold shadow-md hover:bg-primary/90 transition-colors">
+            Get started
+          </button>
+<button class="md:hidden p-2 rounded-md hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined"> menu </span>
+</button>
+</div>
+</div>
+</header>
+<main class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+<div class="text-center mb-16">
+<h1 class="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 dark:text-white">How DevExchange Works</h1>
+<p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-400">A simple, transparent process for temporary developer exchanges between trusted companies.</p>
+</div>
+<div class="relative">
+<div aria-hidden="true" class="absolute left-1/2 top-0 bottom-0 w-px bg-gray-300 dark:bg-gray-700 hidden md:block"></div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16">
+<div class="flex flex-col md:flex-row items-start gap-8">
+<div class="flex-shrink-0 w-20 h-20 bg-primary/10 dark:bg-primary/20 rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-primary"> file_present </span>
+</div>
+<div>
+<p class="text-sm font-semibold text-primary">STEP 1</p>
+<h3 class="text-xl font-bold mt-1 text-gray-900 dark:text-white">Submit Your Request</h3>
+<p class="mt-2 text-base text-gray-600 dark:text-gray-400">
+                Detail your needs: required skills, project duration, and other specifics. Clarity helps us find your perfect match.
+              </p>
+</div>
+</div>
+<div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
+<div class="absolute inset-0 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAMP069dNh3yMNlxsZiOePubIxRyJBi7aaTMGKj6Sp116lNOAmPjfZ0NPFSjYZ8q5JlCjfB8g5ca85y7zAaDmiErQCgPrwq2yKmiVYVU2O6u2v1c1AmZ0S5R3XFjF4AtqRUO4ulm78WYhOk8QONLIe7OeIZA2h0hZCGt0ClgmXjlNE7svCicj5X9Ted4U0ajNs5kKC49-yyVZx5SuR98WQcLDwbTz7lQnNCjl1x0DtJEG2kH4i4gloriiYcwTkPlUCMcBlcWtDPKDk");'></div>
+</div>
+<div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-lg md:col-start-1">
+<div class="absolute inset-0 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA351_XZ5xgW1RpJ_9dwKCoHeKVLfAz53vquT1vcCEYEwR8Ge_sHAF982-n0Kieq8e6YXczQDubVxnMB_ZzaB08YWcHqlzy8UQ_5v2VWOnib4jyv6Ya6n0xyR4PM999exXkZhGLGukGyol7IbNzd8qw6CXX9VQPb6Ra1HFXI42bQBZ-y0vZMyQxsRNKmXQ0zgUGpjYvAwu-mPbtvzRaIvU2F9DSqGoAopBbQgs_JA4lWGFPyfGFyqcocMfUu7K09QW30tiXZrRl9bE");'></div>
+</div>
+<div class="flex flex-col md:flex-row items-start gap-8">
+<div class="flex-shrink-0 w-20 h-20 bg-primary/10 dark:bg-primary/20 rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-primary"> person_search </span>
+</div>
+<div>
+<p class="text-sm font-semibold text-primary">STEP 2</p>
+<h3 class="text-xl font-bold mt-1 text-gray-900 dark:text-white">Intelligent Matching</h3>
+<p class="mt-2 text-base text-gray-600 dark:text-gray-400">
+                Our system analyzes your request and matches you with a company that has the required skills available for exchange.
+              </p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row items-start gap-8">
+<div class="flex-shrink-0 w-20 h-20 bg-primary/10 dark:bg-primary/20 rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-primary"> handshake </span>
+</div>
+<div>
+<p class="text-sm font-semibold text-primary">STEP 3</p>
+<h3 class="text-xl font-bold mt-1 text-gray-900 dark:text-white">Exchange Agreement</h3>
+<p class="mt-2 text-base text-gray-600 dark:text-gray-400">
+                We facilitate a transparent agreement outlining terms, responsibilities, and timelines for a mutually beneficial arrangement.
+              </p>
+</div>
+</div>
+<div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
+<div class="absolute inset-0 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCrcfEOyM7vSEBlrcRBuQht0nQtr8oowalIRDnvdlHMPvK8i_rV5uGfLUmO2Xy4YQPp6z647IYfwge4hXhgz59UKKE8SjegNWMRDb1MfSRHApfHFaklA2wPLvjjRqUNmVo04jxRSHfUxbU_LHJsBMv9BL1RyfKr2p9jjpkqesuWGMAh2PuZlOTE6E8pVXYGvE_lhf5zvX022XofV3YfT-rExahqs2uELUtnMcENUuJeTH1sdnJK5l606NjySbmz51U9FJ4KfsRQ__M");'></div>
+</div>
+<div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-lg md:col-start-1">
+<div class="absolute inset-0 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBvwxsmG0Ti2e5HpORMrIfZPb2AFGlu0hGstTG5xJoq5YcGKqWHipS78chmrvyYZIxv0mG5DWBpL0Q9Qw8gGZ-E06-C2bKhlW-YMrcAcliVpkmggPi77iLI_YgzxjFw0vV2TARUVXl9LX1IxArs_a-JYNqQLOe-CcoC-i04FVQWpnUM0nz34gHon4U5ZH9f0biKekAMjvd9s-dXqx8K-d1AvbslyVLXJgWHZdi8LMH6KGwKx7b3dTIEfCFc81IiI_VHRgAuLgN7wq0");'></div>
+</div>
+<div class="flex flex-col md:flex-row items-start gap-8">
+<div class="flex-shrink-0 w-20 h-20 bg-primary/10 dark:bg-primary/20 rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-primary"> integration_instructions </span>
+</div>
+<div>
+<p class="text-sm font-semibold text-primary">STEP 4</p>
+<h3 class="text-xl font-bold mt-1 text-gray-900 dark:text-white">Seamless Integration</h3>
+<p class="mt-2 text-base text-gray-600 dark:text-gray-400">
+                The developer integrates into your team, supported by our platform's tools for smooth collaboration.
+              </p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row items-start gap-8">
+<div class="flex-shrink-0 w-20 h-20 bg-primary/10 dark:bg-primary/20 rounded-xl flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-primary"> rate_review </span>
+</div>
+<div>
+<p class="text-sm font-semibold text-primary">STEP 5</p>
+<h3 class="text-xl font-bold mt-1 text-gray-900 dark:text-white">Review &amp; Feedback</h3>
+<p class="mt-2 text-base text-gray-600 dark:text-gray-400">
+                After the exchange, both companies provide feedback to help us continuously improve our matching process and platform.
+              </p>
+</div>
+</div>
+<div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-lg">
+<div class="absolute inset-0 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDieE9TGnsoN_AOh6jT31e4EpVWNz_Qe9yUga28M8RzShvJEWGbt4TPhHQGEpSYWge41jIGayUzj0R5CBEqdGGW8_8XAB--vagnd3a-HFGqoyhLBdjI23_tuudurae-oYUBWn72x-m4-bYqLPbCnhdss1iKpQw6A39nOEK9SsEKZ_jICimPMs2JYMlU17SQdxABch7KDzpClScedxQuGVUZRX7nsDsLENoSlaBn8JRkBfD_H1a0y_SK6R1uUTi0hvPpu8heEfSoLlM");'></div>
+</div>
+</div>
+</div>
+<div class="text-center mt-24">
+<h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Ready to find your perfect developer match?</h2>
+<p class="mt-3 max-w-xl mx-auto text-lg text-gray-600 dark:text-gray-400">
+          Join DevExchange and start your first temporary developer exchange today.
+        </p>
+<button class="mt-8 inline-flex items-center justify-center rounded-lg h-12 px-6 bg-primary text-white text-base font-bold shadow-lg hover:bg-primary/90 transition-transform hover:scale-105">
+            Get Started Now
+        </button>
+</div>
+</main>
 
-        </div>
-    </body>
-    <script src='globalscript.js' defer> </script>
+</body></html>
 
-</html>
