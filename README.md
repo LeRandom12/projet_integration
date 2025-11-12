@@ -6,7 +6,7 @@ Si une entreprise a besoin d'un développeur IA par exemple le temps d'un instan
 
 # Comment ajouter mon contact au site ?
 vous pouvez ajouter vos données de contact dans [contact.json](https://github.com/LeRandom12/projet_integration/blob/main/contact.json) 
-et faire un pull request.
+et faire un pull request. Nous accepterons ensuite votre demande et notre système ajoutera votre contact sur la page d'accueil de notre site .
 
 # Crédits
 Maxime D.
