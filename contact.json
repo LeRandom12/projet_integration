@@ -48,6 +48,13 @@
             "email": "lucas.nguyen@example.com",
             "company": "pinterest",
             "skills": ["C#", ".NET", "Azure"]
+        }    ,
+        {
+            "Name": "test test",
+            "city": "Toulouse",
+            "email": "lucas.nguyen@example.com",
+            "company": "pinterest",
+            "skills": ["C#", ".NET", "Azure"]
         } 
     ]
 }
