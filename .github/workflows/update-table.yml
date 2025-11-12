@@ -20,7 +20,7 @@ jobs:
 
       - name: Injection du tableau généré dans index.html
         run: |
-          echo "🧩 Injection du tableau dans index.html..."
+          echo "Injection du tableau dans index.html..."
           TABLE=$(cat output.html)
           awk -v table="$TABLE" '
             /<tbody id='\''__pushctn'\''>/ {print; print table; skip=1; next}
@@ -28,7 +28,7 @@ jobs:
             !skip
           ' index.html > index.new.html
           mv index.new.html index.html
-          echo "✅ index.html mis à jour !"
+          echo "index.html mis à jour"
 
       - name: Commit & push si changement
         run: |
@@ -36,8 +36,8 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add index.html output.html || true
           if git diff --cached --quiet; then
-            echo "⚪ Aucun changement détecté, rien à commit 😎"
+            echo "Aucun changement"
           else
-            git commit -m "🔄 Auto-update index.html depuis contact.json"
+            git commit -m "Auto-update index.html depuis contact.json"
             git push
           fi
