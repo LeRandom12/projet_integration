@@ -23,6 +23,7 @@ jobs:
         
       - name: injection du tableau
         run: |
+          TABLE=$(cat contacts_table.html)
           awk -v table="$TABLE" '
             /<tbody id='\''__pushctn'\''>/ {print; print table; skip=1; next}
             /<\/tbody>/ {skip=0}
