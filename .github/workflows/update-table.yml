@@ -17,8 +17,10 @@ jobs:
         uses: Teebra/JSON-to-HTML-table@v2.0.0
         with:
           json-file: contact.json
-          html-file: index.html
 
+      - name: écrire le résultat dans un fichier
+        run: echo "${{ steps.convert.outputs.html }}" > contacts_table.html
+        
       - name: injection du tableau
         run: |
           awk -v table="$TABLE" '
@@ -28,7 +30,7 @@ jobs:
           ' index.html > index.new.html
           mv index.new.html index.html
 
-      - name: Commit and push updated HTML
+      - name: Commit & push nouveau HTML
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
