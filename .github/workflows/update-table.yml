@@ -30,8 +30,8 @@ jobs:
             BEGIN {
               "echo " table_b64 " | base64 --decode" | getline table
             }
-            /<tbody id='\''__pushctn'\''>/ {print; print table; skip=1; next}
-            /<\/tbody>/ {skip=0}
+            /<div id='\''__pushctn'\''>/ {print; print table; skip=1; next}
+            /<\/div>/ {skip=0}
             !skip
           ' index.html > index.new.html
 
