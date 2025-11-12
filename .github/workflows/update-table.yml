@@ -1,4 +1,4 @@
-name: Auto-update de index.html depuis la liste de contacts contact.json
+name: Auto-update de index.html depuis contact.json
 
 on:
   push:
@@ -6,35 +6,38 @@ on:
       - "contact.json"
 
 jobs:
-  update-table:
+  update-html:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout du code
         uses: actions/checkout@v4
 
-      - name: conversion JSON to HTML table
+      - name: Conversion contact.json → tableau HTML
         uses: Teebra/JSON-to-HTML-table@v2.0.0
         with:
           json-file: contact.json
 
-      - name: écrire le résultat dans un fichier
-        run: echo "${{ steps.convert.outputs.html }}" > contacts_table.html
-        
-      - name: injection du tableau
+      - name: Injection du tableau généré dans index.html
         run: |
-          TABLE=$(cat contacts_table.html)
+          echo "🧩 Injection du tableau dans index.html..."
+          TABLE=$(cat output.html)
           awk -v table="$TABLE" '
             /<tbody id='\''__pushctn'\''>/ {print; print table; skip=1; next}
             /<\/tbody>/ {skip=0}
             !skip
           ' index.html > index.new.html
           mv index.new.html index.html
+          echo "✅ index.html mis à jour !"
 
-      - name: Commit & push nouveau HTML
+      - name: Commit & push si changement
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add index.html
-          git commit -m "update index.html - nouveau contact"
-          git push
+          git add index.html output.html || true
+          if git diff --cached --quiet; then
+            echo "⚪ Aucun changement détecté, rien à commit 😎"
+          else
+            git commit -m "🔄 Auto-update index.html depuis contact.json"
+            git push
+          fi
