@@ -20,7 +20,7 @@ label {
 }
 
 table, table * { border: none !important ; }
-table { background: none !important ; }
+table { background: none !important ; float: initial !important ; }
 thead tr , tbody tr:not(:last-child) { border-bottom: 1px solid #d8d9dc !important ; }
 #__pushctn > table > tbody > tr > th {
     display: none !important ;
