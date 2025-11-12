@@ -21,8 +21,6 @@ jobs:
 
       - name: injection du tableau
         run: |
-          # Remplace le contenu du tbody __pushctn par le tableau généré
-          TABLE=$(cat contacts_table.html)
           awk -v table="$TABLE" '
             /<tbody id='\''__pushctn'\''>/ {print; print table; skip=1; next}
             /<\/tbody>/ {skip=0}
@@ -35,5 +33,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add index.html
-          git commit -m "🔄 Auto-update index.html from contact.json"
+          git commit -m "update index.html - nouveau contact"
           git push
