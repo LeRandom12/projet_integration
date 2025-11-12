@@ -27,6 +27,13 @@
             "email": "lucas.nguyen@example.com",
             "company": "pinterest",
             "skills": ["C#", ".NET", "Azure"]
+        } ,
+        {
+            "Name": "Prénom Nom",
+            "city": "bordeaux",
+            "email": "test@exemple.com",
+            "company": "pinterest",
+            "skills": ["C#", ".NET", "Azure"]
         }
     ]
 }
