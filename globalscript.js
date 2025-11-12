@@ -1,5 +1,5 @@
 
-
+/*
 let __pushctn = document.getElementById ('__pushctn') ;
 fetch ('contact.json').then ((res) => res.json ()).then ((res) => {
     res.contacts.forEach((el) => {
@@ -19,6 +19,6 @@ fetch ('contact.json').then ((res) => res.json ()).then ((res) => {
     }) ;
 
 }) ;
-
+*/
 
 
