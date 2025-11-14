@@ -1,46 +1,52 @@
 {
-    "contacts": [ 
-        {
-            "Name": "Alice Martin",
-            "city": "Paris",
-            "email": "alice.martin@example.com",
-            "company": "amazon",
-            "skills": ["JavaScript", "React", "Node.js"]
-        } ,
-        {
-            "Name": "Karim Benali",
-            "city": "Lyon",
-            "email": "karim.benali@example.com",
-            "company": "google",
-            "skills": ["Python", "Django", "SQL"]
-        } ,
-        {
-            "Name": "Sophie Durand",
-            "city": "Marseille",
-            "email": "sophie.durand@example.com",
-            "company": "facebook",
-            "skills": ["Java", "Spring Boot", "Docker", "Kubernetes"]
-        } ,
-        {
-            "Name": "Lucas Nguyen",
-            "city": "Toulouse",
-            "email": "lucas.nguyen@example.com",
-            "company": "pinterest",
-            "skills": ["C#", ".NET", "Azure"]
-        } ,
-        {
-            "Name": "Prénom Nom",
-            "city": "bordeaux",
-            "email": "test@exemple.com",
-            "company": "pinterest",
-            "skills": ["C#", ".NET", "Azure"]
-        } ,
-        {
-            "Name": "Prénom Nom",
-            "city": "bordeaux",
-            "email": "test@exemple.com",
-            "company": "pinterest",
-            "skills": ["C#", ".NET", "Azure"]
-        }
-    ]
+  "objects": [
+    {
+      "Name": "Commodore 64",
+      "year": "1982",
+      "type": "Ordinateur personnel",
+      "state": "Fonctionnel",
+      "description": "Modèle d’origine avec clavier beige, icône du rétro-computing.",
+      "contributor": "Maxime D."
+    },
+    {
+      "Name": "Raspberry Pi Zero W",
+      "year": "2017",
+      "type": "Micro-ordinateur",
+      "state": "Neuf",
+      "description": "Version rare, idéale pour les projets embarqués.",
+      "contributor": "Yannis Y."
+    },
+    {
+      "Name": "Sony VAIO UX",
+      "year": "2006",
+      "type": "Mini PC portable",
+      "state": "Bon état",
+      "description": "Un des premiers ultraportables, avec écran tactile et clavier coulissant.",
+      "contributor": "Gwenaël T."
+    },
+    {
+      "Name": "Raspberry Pi Model B",
+      "year": "2012",
+      "type": "Micro-ordinateur",
+      "state": "Fonctionnel",
+      "description": "Première génération de Raspberry Pi, carte de collection très recherchée.",
+      "contributor": "Alice M."
+    },
+    {
+      "Name": "IBM Model M Keyboard",
+      "year": "1985",
+      "type": "Clavier mécanique",
+      "state": "Très bon état",
+      "description": "Clavier culte reconnu pour son switch buckling spring et sa robustesse légendaire.",
+      "contributor": "Karim B."
+    },
+    {
+      "Name": "Palm Pilot 1000",
+      "year": "1996",
+      "type": "Assistant personnel (PDA)",
+      "state": "Fonctionnel",
+      "description": "Premier assistant numérique grand public de Palm, pionnier des PDA modernes.",
+      "contributor": "Sophie D."
+    }
+  ]
 }

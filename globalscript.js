@@ -1,24 +1,34 @@
+fetch("contact.json")
+  .then(response => response.json())
+  .then(data => {
+    const container = document.getElementById("__pushctn");
 
-/*
-let __pushctn = document.getElementById ('__pushctn') ;
-fetch ('contact.json').then ((res) => res.json ()).then ((res) => {
-    res.contacts.forEach((el) => {
-        console.log (el) ;
+    let html = `
+      <table style="width:100%; border-collapse: collapse; background-color:#f6f8fa;">
+        <tr style="border: 1px solid black; background-color:#e5e7eb;">
+          <th style="border: 1px solid black; padding:8px;">Nom</th>
+          <th style="border: 1px solid black; padding:8px;">Année</th>
+          <th style="border: 1px solid black; padding:8px;">Type</th>
+          <th style="border: 1px solid black; padding:8px;">État</th>
+          <th style="border: 1px solid black; padding:8px;">Description</th>
+          <th style="border: 1px solid black; padding:8px;">Contributeur</th>
+        </tr>
+    `;
 
-        let tr = document.createElement ('tr') ;
-        let contact_name = document.createElement ('td') ; contact_name.textContent = el.Name ;
-        let contact_ville = document.createElement ('td') ; contact_ville.textContent = el.city ;
-        let contact_email = document.createElement ('td') ; contact_email.textContent = el.email ;
-        let contact_company = document.createElement ('td') ; contact_company.textContent = el.company ;
-        let contact_skills = document.createElement ('td') ; 
-        contact_skills.append (...el.skills.map ((e) => { let skill_el = document.createElement ('label') ; skill_el.textContent = e ; return skill_el ; }))
+    data.objects.forEach(obj => {
+      html += `
+        <tr style="border: 1px solid black;">
+          <td style="border: 1px solid black; padding:8px;">${obj.Name}</td>
+          <td style="border: 1px solid black; padding:8px;">${obj.year}</td>
+          <td style="border: 1px solid black; padding:8px;">${obj.type}</td>
+          <td style="border: 1px solid black; padding:8px;">${obj.state}</td>
+          <td style="border: 1px solid black; padding:8px;">${obj.description}</td>
+          <td style="border: 1px solid black; padding:8px;">${obj.contributor}</td>
+        </tr>
+      `;
+    });
 
-        tr.append (contact_name , contact_ville , contact_email , contact_company , contact_skills) ;
-        
-        __pushctn.append (tr) ;
-    }) ;
-
-}) ;
-*/
-
-
+    html += `</table>`;
+    container.innerHTML = html;
+  })
+  .catch(error => console.error("Erreur lors du chargement du JSON :", error));
